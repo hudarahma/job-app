@@ -1,0 +1,94 @@
+
+hr {
+    width: 1px;
+    height: 80px;
+    background: #6E8098;
+    mix-blend-mode: normal;
+    opacity: 0.2;
+}
+input { 
+    width: 80%;
+    height: 100%;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+    color: #19202D;
+    opacity: 0.5;
+}
+
+input[type='checkbox'] {
+    width: 24px;
+    height: 24px;
+    background-color: #19202D;
+    border-radius: 3px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.search__container {
+    width: 1110px;
+    height: 80px;
+    left: 20%;
+    top: 136px;
+    background: #FFFF;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search__by__title {
+    width: 312px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.search__by__location {
+    width: 312px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.search__by__fulltime {
+    width: 193px;
+    height: 24px;
+    display: flex;
+}
+
+.search__by__fulltime span {
+    width: 180px;
+    height: 24px;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #19202D;
+}
+
+button {
+    width: 123px;
+    height: 48px;
+    background: #5964E0;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    cursor: pointer;
+    border: none
+}
+
+button:hover{
+    background: #6c76e0;
+}
+button:focus {
+    outline: none;
+}
