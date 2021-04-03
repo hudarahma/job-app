@@ -24,6 +24,7 @@
     align-items: center;
     justify-content: space-between;
     background: white;
+    padding-right: 30px;
 }
 
 .company_site img {
@@ -144,4 +145,10 @@ ul, ol {
 .how_to_apply span {
     padding: 20px;
     font-size: 18px;
+}
+
+.how_to_apply span a{
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
 }

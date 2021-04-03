@@ -60,7 +60,7 @@ function Info() {
                         <span>How to Apply</span>
                         <span>Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus.</span>
 
-                        <Link to='https://examplelink.com/how-to-apply'>https://examplelink.com/how-to-apply</Link>
+                        <span><Link to='https://examplelink.com/how-to-apply'>https://examplelink.com/how-to-apply</Link></span>
                     </div>
 
                    
