@@ -1,17 +1,30 @@
-import React , {useEffect, useState} from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import Header from './Header';
 import Jobscard from './Jobscard';
 import Search from './Search';
+import Info from './Info';
+
 
 function App() {
-
+  
   return (
     <div className="app">
     
-      <Header />
-      <Search />
-      <Jobscard />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Header />
+            <Search />
+            <Jobscard />
+          </Route>
+          <Route path="/company-info">
+            <Header />
+            <Info />
+          </Route>
+        </Switch>
+      </Router>
       
     </div>
   );

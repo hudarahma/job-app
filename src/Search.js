@@ -5,6 +5,13 @@ import locationIcon from './assets/desktop/icon-location.svg';
 
 
 function Search() {
+    
+  
+  
+    // var TrieSearch = require('trie-search');
+    // var ts = new TrieSearch('name');
+    // ts.addAll(arr);
+    // ts.get('a');
     return (
         <div className='search__container'>
             <div className='search__by__title'>
