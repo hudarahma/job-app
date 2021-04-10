@@ -1,42 +1,23 @@
 import React , {useEffect, useState} from 'react';
 import './Jobscard.css';
 import { DateTime } from 'luxon';
+import { useHistory } from 'react-router';
 
 
 
-function Jobscard() {
-    const [getJobs, setGetjobs] = useState();
-  
-    useEffect(()=>{
-        
-      fetch(
-        "https://jobs.github.com/positions.json?search=node"
-      )
-      .then(res => res.json())
-      .then(data => setGetjobs(data))
-      .catch(err => console.log(err,'error'));
-
-    },[]);
-    
-    console.log(getJobs);
-    
+function Jobscard( { job } ) {
+    const history = useHistory();
     return (
-
-        <div className='jobs__container'>
-           
             <div className='wrapper'>
-            {getJobs && getJobs.map(job => ( 
-                <div className='jobs__card' key={job.id}>
-                    <div className='logo'>
-                        <img src={job.company_logo} alt='company_logo'/>
-                    </div>
+
+                <div className='jobs__card' key={job.id} onClick={()=> history.push(`/job/${job.id}`)} >
+                    <img className='logo' src={job.company_logo} alt='company_logo'/>
                     <div className='jobs__info'>
                         <div className='type' >
                                 <h4>{DateTime.fromJSDate(
                                 new Date(job.created_at)
                             ).toRelative()} . {job.type}</h4>
                         </div>
-                       
                         <div className='title'>
                             <h2 >{job.title}</h2>
                         </div>
@@ -48,11 +29,11 @@ function Jobscard() {
                         </div>
                     </div>
                 </div>
-            ))}
+           
             </div>
             
-        </div>
+       
     )
-}
+};
 
 export default Jobscard;

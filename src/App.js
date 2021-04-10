@@ -1,32 +1,23 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import ContextProvider from "./Context";
 import './App.css';
-import Header from './Header';
-import Jobscard from './Jobscard';
-import Search from './Search';
-import Info from './Info';
+import Home from './pages/Home';
+import Job from './pages/Job';
+
 
 
 function App() {
   
   return (
-    <div className="app">
-    
+    <ContextProvider>
       <Router>
-        <Switch>
-          <Route exact path="/">
-            <Header />
-            <Search />
-            <Jobscard />
-          </Route>
-          <Route path="/company-info">
-            <Header />
-            <Info />
-          </Route>
-        </Switch>
+        
+        <Route path='/job/:id' exact component={Job} />
+        {/* <Route path='/:page' component={Home}/> */}
+        <Route path="/" exact component={Home} />
       </Router>
-      
-    </div>
+    </ContextProvider>
   );
 }
 
