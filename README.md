@@ -1,10 +1,10 @@
 
 # About The Project
 <p align="center">
-    <img src='/public/dev-jobs.jpg' alt='tesla-clone' 
-    width="180" height="180"/>
-    <img src='/public/dev-jobs2.jpg' alt='tesla-clone' 
-    width="180" height="180"/>
+    <img src='/public/dev-jobs.jpg' alt='dev-jobs' 
+    width="180" height="250"/>
+    <img src='/public/dev-jobs2.jpg' alt='dev-jobs' 
+    width="180" height="250"/>
 </p>
 
 This project its about searching and applying for jobs, from gtiHub API.
