@@ -2,9 +2,9 @@
 # About The Project
 <p align="center">
     <img src='/public/dev-jobs.jpg' alt='dev-jobs' 
-    width="180" height="250"/>
+    width="200" height="200"/>
     <img src='/public/dev-jobs2.jpg' alt='dev-jobs' 
-    width="180" height="250"/>
+    width="200" height="200"/>
 </p>
 
 This project its about searching and applying for jobs, from gtiHub API.
